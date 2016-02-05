@@ -26,14 +26,15 @@ Exercises:
 task hello(type: HelloTask)
 
 class HelloTask extends DefaultTask {
+
     @TaskAction
     void doAction() {
-        println 'Hello World'
+        logger.info 'Enter doAction in HelloTask'
+        logger.lifecycle 'Hello World'
+        logger.info 'Exit doAction in HelloTask'
     }
 }
 
-/*
 task derpy << {
     primp "Herp de derp"
 }
-*/

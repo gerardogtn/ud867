@@ -37,10 +37,17 @@ class JavaGreeter {
     public static void sayHello() {
         System.out.println("Hello Java!");
     }
+
+    public static void sayHelloStatic(){
+      System.out.println("Hey static!")
+    }
 }
+
 
 JavaGreeter greeter = new JavaGreeter()
 greeter.sayHello()
+
+JavaGreeter.sayHelloStatic()
 
 /*
 
